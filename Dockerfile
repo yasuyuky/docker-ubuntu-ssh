@@ -8,5 +8,4 @@ RUN echo 'root:root' | chpasswd
 RUN sed -ri 's/^PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 EXPOSE 22
 
-COPY start.sh /
-ENTRYPOINT ["/start.sh"]
+CMD ["/sbin/init"]
