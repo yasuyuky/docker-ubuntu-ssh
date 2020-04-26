@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:bionic
 LABEL maintainer="Yasuyuki YAMADA <yasuyuki.ymd@gmail.com>"
 
 RUN apt-get -y update && apt-get -y install openssh-server python rsyslog less vim sudo tzdata
